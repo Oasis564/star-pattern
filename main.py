@@ -85,3 +85,25 @@ for i in range(n):
     for j in range(i, n - 1):
         print("*",end="  ")
     print()
+    
+# same shape but other side
+
+for i in range(n-1):
+    
+    for j in range(i):
+        print("*",end="  ")
+        
+    for j in range(i, n):
+        print(" ",end="  ")
+    print()
+    
+for i in range(n):
+    
+    for j in range(i, n - 1):
+        print("*",end="  ")
+        
+    for j in range(i + 1):
+        print(" ",end="  ")
+    print()
+    
+# we swapped the for loop which was responsible for drawing the star right angle triangle and the space right angle triangle to create an opposite reversed verion of the code we made prior so it faced right instead of left.
